@@ -1,0 +1,7 @@
+ALTER TABLE tasks
+ALTER COLUMN status DROP DEFAULT,
+DROP CONSTRAINT status_check,
+ALTER COLUMN created_at DROP DEFAULT,
+ALTER COLUMN updated_at DROP DEFAULT;
+
+ALTER TABLE tasks RENAME COLUMN updated_at TO update_at;
