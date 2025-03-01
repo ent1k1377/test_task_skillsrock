@@ -17,7 +17,7 @@ type Handler struct {
 }
 
 func main() {
-	time.Sleep(1 * time.Second) // Ждем когда бд прогрузиться
+	time.Sleep(10 * time.Second) // Ждем когда бд прогрузиться
 	loadEnv()
 
 	handler := Handler{
